@@ -1,0 +1,24 @@
+
+FOR SEEGA_AI1
+python ai_game_cli.py -ai0 seega_ai -ai1 seega_ai -train_samples 1000 -instance 0
+python ai_game_cli.py -ai0 seega_ai -ai1 seega_ai -train_samples 1000 -instance 1
+python ai_game_cli.py -ai0 seega_ai -ai1 seega_ai -train_samples 1000 -instance 2
+python ai_game_cli.py -ai0 seega_ai -ai1 seega_ai -train_samples 1000 -instance 3
+python ai_game_cli.py -ai0 seega_ai -ai1 seega_ai -train_samples 1000 -instance 4
+python ai_game_cli.py -ai0 seega_ai -ai1 seega_ai -train_samples 1000 -instance 5
+
+
+
+To test the new and old model on 100 games
+python ai_game.py -ai0 seega_ai2 -ai1 seega_aiold -train_samples 200 #if new model plays as black. Change seega_ai to get the other
+
+
+FOR SEEGA_AI2
+
+python ai_game_cli2.py -ai0 seega_ai2 -ai1 seega_ai2 -train_samples 1000 -instance 0
+
+
+FOR SEEGA_AI3
+
+cd desktop/rl_seega/az 
+python ai_game_cli.py -ai0 seega_ai2 -ai1 seega_ai2 -train_samples 1000 -instance 0
